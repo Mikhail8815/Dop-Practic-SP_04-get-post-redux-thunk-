@@ -22,12 +22,6 @@ export const decksReducer = (state: DecksState = initialState, action: DecksActi
   }
 }
 
-// type SetDecksActionType = {
-//   type: 'SET_DECKS'
-//   payload: {
-//     decks: Deck[]
-//   }
-// }
 
 type  SetDecksActionType = ReturnType<typeof setDecksAC>
 type  AddDeckActionType = ReturnType<typeof addDeckAC>
