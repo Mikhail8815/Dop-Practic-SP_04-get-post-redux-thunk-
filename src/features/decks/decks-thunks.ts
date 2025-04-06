@@ -1,5 +1,5 @@
 import { AddDeckParams, decksAPI } from './decks-api.ts'
-import { addDeckAC, setDecksAC } from './decks-reducer.ts'
+import { addDecksAC, setDecksAC } from './decks-reducer.ts'
 import { AppDispatch } from '../../app/store.ts'
 
 
@@ -10,6 +10,6 @@ export const fetchDecksTC = () => (dispatch: AppDispatch) => {
 }
 export const addNewDeckTC = (params: AddDeckParams) => (dispatch: AppDispatch) => {
   return decksAPI.addDeck(params).then((res)=>{
-    dispatch(addDeckAC(res.data))
+    dispatch(addDecksAC(res.data))
   })
 }
