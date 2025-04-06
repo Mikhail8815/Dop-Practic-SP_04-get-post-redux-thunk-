@@ -1,6 +1,4 @@
 import { AddDeckResponse, Deck } from './decks-api.ts'
-import { Dispatch } from 'react'
-import { act } from 'react-dom/test-utils'
 
 const initialState = {
   decks: [] as Deck[], // todo: add type

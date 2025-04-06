@@ -1,6 +1,5 @@
 import s from './AddNewPostForm.module.css'
 import { useForm } from 'react-hook-form'
-import { useDispatch } from 'react-redux'
 import { addNewDeckTC } from '../decks-thunks.ts'
 import { useAppDispatch } from '../../../app/store.ts'
 
